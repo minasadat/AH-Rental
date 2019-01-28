@@ -7,6 +7,25 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <include layout="@layout/main_content_home"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingButtonNewShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="75dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/blueLightBtn"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_share" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="0dp"
